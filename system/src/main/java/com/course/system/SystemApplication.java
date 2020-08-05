@@ -1,5 +1,6 @@
 package com.course.system;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -9,6 +10,7 @@ import org.springframework.core.env.Environment;
 
 @EnableEurekaClient
 @SpringBootApplication
+@MapperScan("com.course.system.mapper")
 public class SystemApplication {
 
 	// springboot默认继承slf4j框架，它定义了一些日志接口，规范日志输入，
